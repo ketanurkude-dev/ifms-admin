@@ -29,8 +29,8 @@ export default function AuthLayout({ title, subtitle, children }) {
         <p className="text-xs text-slate-400">&copy; {new Date().getFullYear()} Admin Portal. For authorised use only.</p>
       </div>
 
-      <div className="w-full lg:w-1/2 h-full overflow-y-auto flex items-center justify-center p-6 sm:p-10">
-        <div className="w-full max-w-md">
+      <div className="w-full lg:w-1/2 h-full overflow-y-auto flex justify-center p-6 sm:p-10">
+        <div className="w-full max-w-md my-auto">
           <div className="lg:hidden flex items-center gap-2 mb-8">
             <div className="w-8 h-8 rounded-full bg-slate-900 text-white flex items-center justify-center text-sm font-semibold">
               AP
