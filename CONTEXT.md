@@ -22,12 +22,12 @@ later without a rewrite.
 
 ## Stack & ports
 - Backend: FastAPI + SQLAlchemy 2.0 + PostgreSQL + **httpx** (new dependency vs. the other three --
-  needed to call out to the other portals' REST APIs). Runs on **:8003**.
-- Frontend: React (Vite) + Tailwind CSS, English-only (no i18n -- internal tool). Runs on **:5176**.
+  needed to call out to the other portals' REST APIs). Runs on **:9004**.
+- Frontend: React (Vite) + Tailwind CSS, English-only (no i18n -- internal tool). Runs on **:7004**.
 - DB: `postgresql+psycopg2://admin_db:admin_db@localhost:5432/admin_db` (see `backend/.env`). Its
   own database, entirely separate from the three portals' DBs.
 - Venv at `backend/venv` (Windows). Start with:
-  `cd E:\IFMS\admin_portal\backend && venv\Scripts\python.exe -m uvicorn app.main:app --port 8003`
+  `cd E:\IFMS\admin_portal\backend && venv\Scripts\python.exe -m uvicorn app.main:app --port 9004`
 
 ## Architecture: how it reaches the three portals without changing them
 **Zero changes were made to emp_mgmt_pro / pension_mgmt / vendor_mgmt to build this.** Instead,
